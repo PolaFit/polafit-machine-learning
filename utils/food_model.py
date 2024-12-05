@@ -4,7 +4,7 @@ import tensorflow as tf
 import csv
 import json
 
-MODEL_PATH = 'models/food_model.h5'
+MODEL_PATH = 'models/food_model_20.h5'
 FOOD_NUTRITION_CSV = 'food_nutrition.csv'
 
 def load_food_model():
@@ -13,7 +13,7 @@ def load_food_model():
 
 def predict_food(image_path):
     model = load_food_model()
-    img = tf.keras.preprocessing.image.load_img(image_path, target_size=(160, 160))
+    img = tf.keras.preprocessing.image.load_img(image_path, target_size=(128, 128))
     img_array = tf.keras.preprocessing.image.img_to_array(img)
     img_array = np.expand_dims(img_array, axis=0)
     img_array = img_array / 255.0 
