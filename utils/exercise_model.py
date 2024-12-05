@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
-DATASET_PATH = 'dataset_olahraga.csv'
+DATASET_PATH = 'dataset/dataset_olahraga.csv'
 MODEL_PATH = 'models/recommendation_model.h5'
 
 df = pd.read_csv(DATASET_PATH)

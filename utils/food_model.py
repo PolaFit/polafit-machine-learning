@@ -5,7 +5,7 @@ import csv
 import json
 
 MODEL_PATH = 'models/food_model_20.h5'
-FOOD_NUTRITION_CSV = 'food_nutrition.csv'
+FOOD_NUTRITION_CSV = 'dataset/food_nutrition.csv'
 
 def load_food_model():
     model = tf.keras.models.load_model(MODEL_PATH)
