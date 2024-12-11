@@ -32,13 +32,13 @@ def get_nutrition(predicted_class):
                 nutrition_info = {
                     "ID": int(row['ID']),
                     "Makanan": row['Makanan'],
-                    "Berat per Serving (g)": row['Berat per Serving (g)'],
-                    "Kalori (kcal)": row['Kalori (kcal)'],
-                    "Protein (g)": row['Protein (g)'],
-                    "Lemak (g)": row['Lemak (g)'],
-                    "Karbohidrat (g)": row['Karbohidrat (g)'],
-                    "Serat (g)": row['Serat (g)'],
-                    "Gula (g)": row['Gula (g)']
+                    "Berat_per_Serving": row['Berat per Serving (g)'],
+                    "Kalori": row['Kalori (kcal)'],
+                    "Protein": row['Protein (g)'],
+                    "Lemak": row['Lemak (g)'],
+                    "Karbohidrat": row['Karbohidrat (g)'],
+                    "Serat": row['Serat (g)'],
+                    "Gula": row['Gula (g)']
                 }
                 return nutrition_info
     return json.dumps({"error": "Nutrition information not found for the predicted class."})
