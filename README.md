@@ -20,7 +20,7 @@ Make sure you have **Python 3.x** installed. You also need to install the depend
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/polafit.git
+   git clone https://github.com/PolaFit/polafit-machine-learning.git
    cd polafit
    ```
 
